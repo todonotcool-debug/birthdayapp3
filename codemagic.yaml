@@ -6,8 +6,9 @@ workflows:
     scripts:
       - name: Build
         script: |
-          xcodebuild -project swiftui-elements.xcodeproj \
-          -scheme swiftui-elements \
+          xcodebuild \
+          -project BirthdayApp.xcodeproj \
+          -scheme BirthdayApp \
           -sdk iphoneos \
           -configuration Release \
           build
